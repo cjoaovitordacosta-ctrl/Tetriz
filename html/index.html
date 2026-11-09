@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tetris da Noite das Bruxas</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Tetris da Noite das Bruxas</h1>
+  <div class="game">
+    <div class="main">
+      <canvas id="board" width="300" height="600" aria-label="Tabuleiro do jogo"></canvas>
+      <div class="overlay" id="ov">
+        <h2 id="ovt">Pronto para o susto?</h2>
+        <p id="ovp">Encaixe as peças e limpe as linhas antes que a pilha chegue ao topo.</p>
+        <button id="go" type="button">Jogar</button>
+      </div>
+    </div>
+    <div class="side">
+      <div class="box"><small>Pontos</small><b id="sc">0</b></div>
+      <div class="box"><small>Linhas</small><b id="ln">0</b></div>
+      <div class="box"><small>Nível</small><b id="lv">1</b></div>
+      <div class="box"><small>Recorde</small><b id="hi">0</b></div>
+      <div class="box"><small>Próxima</small><canvas id="nx" width="96" height="96"></canvas></div>
+      <div class="box"><small>Guardada</small><canvas id="hd" width="96" height="96"></canvas></div>
+    </div>
+  </div>
+  <div class="pad" aria-label="Controles de toque">
+    <button data-a="left" aria-label="Esquerda">◀</button>
+    <button data-a="right" aria-label="Direita">▶</button>
+    <button data-a="down" aria-label="Descer">▼</button>
+    <button data-a="rot" aria-label="Girar">⟳</button>
+    <button data-a="drop" aria-label="Queda direta">⤓</button>
+  </div>
+  
+  <p class="keys"><kbd>←</kbd><kbd>→</kbd> mover · <kbd>↑</kbd>/<kbd>X</kbd> girar · <kbd>Z</kbd> girar ao contrário · <kbd>↓</kbd> descer<br><kbd>Espaço</kbd> queda direta · <kbd>C</kbd> guardar peça · <kbd>P</kbd> pausa</p>
+</div>
+<script src="../js/game.js"></script>
+</body>
+</html>

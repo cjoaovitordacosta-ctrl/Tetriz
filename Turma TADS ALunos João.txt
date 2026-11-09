@@ -1,0 +1,7 @@
+Turma = TADS
+ALunos = 
+João Vitor da Costa 
+Octavio Barbosa
+Nathalia 
+Fernanda
+Isabela
